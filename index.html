@@ -1,0 +1,178 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Juego OO7 </title>
+		<link href='https://fonts.googleapis.com/css?family=Amatic+SC:700' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+
+		body{
+			margin: 0px;
+			text-align: center;
+			background-image: url("images/textura.jpg");
+			size:100%;
+			font-family: 'Amatic SC', helvetica;
+
+		}
+		h1{
+			
+			font-size: 5em;
+			color: black;
+			display: inline-block;
+			vertical-align: 1em;
+		}
+
+		h2{
+			color: black;
+			font-size: 3em;
+			margin: 0.3em;
+		}
+		h3{
+			color: black;
+			font-size: 40px;
+			margin: 0.3em;
+
+		}
+		p{
+			color:black;
+		}
+
+		#central{
+			display: block;
+			text-align: center;
+		}
+		#derecha{
+			display: inline-block;
+			width: 50%;
+			height: 50%;
+		}
+		#izquierda{
+			float: left;
+			margin: 5em, 1em;
+			display: inline-block;
+			width: 50%;
+			height: 50%;
+		}
+
+		#logo{
+
+			margin: 15px 20px ;
+			width: 240px;
+			height: 206px;
+		}
+	
+		#aventar_palabra{
+			background: transparent;
+			border: none;
+			color: black;
+			margin: 5px 20px;
+
+		}
+		#palabra{
+			padding: 10px;
+			margin: 10px;
+			display: inline-block;
+		}
+
+		#palabra span{
+			font-family: helvetica;
+			font-size: 2em;
+			background: red;
+			color: white;
+			padding: 20px;
+			margin: 5px;
+		}
+		#palabra_display{
+			display: inline-block;
+		}
+		#opciones_letras{
+			margin: 5px;
+		}
+		
+		#comenzar{
+			border: none;
+			background: transparent;
+			display: none;
+
+		}
+		.cuadro_error{
+			background: red;
+			padding: 10px;
+		}
+		#ahorcado_dibujo img{
+
+			width: 87%;
+
+		}
+		#imagenes_vidas1{
+			margin-top: 2em;
+		}
+		#imagenes_vidas2{
+			margin-top: 2em;
+			display: none;
+		}
+		#gameover{
+			margin-top: 2em;
+			display: none;
+		}
+		#texto_footer{
+			border-top: 1px solid gray;
+			font-family: helvetica;
+			font-size: 10px;
+			color: gray;
+		}
+		#errores{
+			margin-top: 25px;
+		}
+		#errores span{
+			margin-right: 0.4em;
+			font-size: 50px;
+
+		}
+
+		#imagenes_vidas2{
+			display: none;
+		}
+
+		#imagenes_vidas3{
+		display: none;
+		}
+
+
+		</style>
+	</head>
+	<body>
+		<div id="main_header">
+			<img id="logo" src="images/logo.png">
+			<h1> ¿Listo para jugar?</h1>
+		</div>
+		<div id="central">
+			<button id="aventar_palabra"><img src="images/boton1.png"></button>
+			<button id="comenzar"><img src="images/boton2.png"></button>
+		</div>
+		<div id="izquierda">		
+			<div id="ahorcado"><img id="ahorcado_dibujo" src="images/0_ahorcado.png"></div>
+		</div>
+
+		<div id ="derecha">
+			<div id="palabra_display"><h2>¡Preparaté para luchar por tu vida!</h2> </div>
+			<br>
+			<div id="palabra"></div>
+			<div id="errores">
+				<!-- <img id="imagenes_vidas0" src="images/vida0.png"> -->
+
+			</div>
+			<!-- <form name="adivinar_letra">
+				<input name="solicitar_letra" type="text" size="10" maxlength="1">
+				<input name="" type="button" value="Adivinar" onClick="verificar()">
+				
+			</form> -->
+			<div id="ganar_juego"></div>
+			<div id="gameover"><img src="images/gameover.png"></div>
+		</div>
+
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+
+
+</html>
